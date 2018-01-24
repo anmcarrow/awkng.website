@@ -1,14 +1,45 @@
+<!doctype html>
 <html>
-	<head>
-	</head>
-<body background="img/back.jpg">
+<head>
+<meta HTTP-EQUIV="Expires" Content="Tue, 24 Jan 2018 12:40:56 GMT">
 
-<center>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta Name="author" Content="Andrey Makarov, mb@panmcarrow.me">
+<meta Name="copyright" Content="Creative Commons">
+
+<meta  Name="keywords" Content="НРИ, настольные игры, настольные ролевые игры, постапокалипсис, Урал, Лавкрафт" >
+<meta  Name="description" Content="Сайт настольной ролевой игры 'Пробуждение: Мёртый Урал'" >
+
+    <title>'Пробуждение: Мёртый Урал' — ролевая игра на обломках Красной Империи</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+<header>
 <img src="img/banner_head.png">
-<br><br>
+</header>
+
+<div id="links">
+
 <a href="http://patreon.com/deadurals_rpg" target="_blank" title="">
 <img src="img/banner_patreon.png"><br>
 
+<wrapper>
 <a href="" target="_blank" title="">
 <img src="img/banner_wiki.png"><br>
 </a>
@@ -34,7 +65,51 @@
 <a href="http://twitter.com/deadurals_rpg" target="_blank" title="">
 <img src="img/banner_twitter.png"><br>
 </a>
-</center>
+<audio id="link-sound1" preload="auto">
+      <source src="audio/button.wav" type="audio/wav">
+</audio>
+
+</div>
+
+</div>
+
+<script>
+var beepThree = $("#link-sound1")[0];
+$("#links a")
+	.mouseenter(function() {
+		beepThree.pause();
+		beepThree.play();
+	});
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47421127 = new Ya.Metrika2({
+                    id:47421127,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47421127" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 
