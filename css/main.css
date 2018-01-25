@@ -60,3 +60,8 @@ p {
   text-align: center;
   color: #c2babb;
 }
+
+.textabout {
+  background: transparent url(../img/about_back.png);
+  background-repeat: no-repeat;
+}
