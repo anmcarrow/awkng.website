@@ -1,8 +1,8 @@
-.glitch-frame {
-  height: 100vh;
+.glitch {
+  z-index: 1;
 }
 
-.glitch-frame:after {
+.glitch:after {
   animation: grain 8s steps(10) infinite;
   background-image: url(../img/grain.jpg);
   content: "";
@@ -12,6 +12,7 @@
   position: fixed;
   top: -110%;
   width: 300%;
+  z-index: 2;
 }
 
 @keyframes grain {
