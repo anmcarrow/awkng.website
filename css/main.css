@@ -8,9 +8,11 @@ body {
 
 #wrapper {
   min-width: 300px;
-  max-width: 500px;
+  max-width: 520px;
   min-height: 100vh;
   margin: auto;
+  padding: 5px;
+  text-align: center;
 }
 
 header {
@@ -29,10 +31,22 @@ img {
     width: 100%;
     text-align: center;
     background: #000000;
+    min-width: 300px;
+    max-width: 520px;
 }
 
 a img:hover {
     box-shadow: 0 0 15px rgba(0,0,0,1);
     opacity: 0.9;
     cursor: pointer;
+}
+
+a {
+    text-color: none;
+}
+
+p {
+  display: block;
+  text-align: center;
+  color: #c2babb;
 }
