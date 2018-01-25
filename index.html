@@ -13,7 +13,9 @@
 <meta  Name="description" Content="Сайт настольной ролевой игры 'Пробуждение: Мёртый Урал'" >
 
     <title>'Пробуждение: Мёртый Урал' — ролевая игра на обломках Красной Империи</title>
+
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/glitch.css" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,6 +32,18 @@
 <header>
 <img src="img/banner_head.png">
 </header>
+
+<div id="about">
+
+<p><em>1958-й год. Тебе так сказали. Память зияет провалами, как лагерное письмо после особо ретивого цензора. Ты — живое воплощение торжества советской науки над безжалостным и неведомым врагом. Ты — надежда, что кошмарная неизвестность наконец-то отступит. Ты — разведчик и у тебя нет права на ошибку </br><a href="javascript:change_visibility ('r0', 'r1')"> Читать далее >>
+</a><em></p>
+<div id="r1" style="display:none">
+    <p>Какой-то текст.</p>
+
+    <a href="#" onClick="change_visibility ('r1', 'r0')">
+       << ...
+    </a>
+</div id="about">
 
 <div id="links">
 
@@ -68,6 +82,18 @@
 
 </div>
 
+<!-- Text minimize script -->
+<script>
+function change_visibility (block_4_close, block_4_open) {
+   $(document).ready(function(){
+       $('#'+block_4_close).css('display','none');
+       $('#'+block_4_open).css('display','');
+       return false;
+   });
+}
+</script>
+
+<!-- Audiolinks player -->
 <script>
 var beepThree = $("#link-sound1")[0];
 $("#links a")
