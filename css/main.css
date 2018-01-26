@@ -66,4 +66,8 @@ p {
 .textabout {
   background: transparent url(../img/about_back.png);
   background-repeat: no-repeat;
+  font-family: 'GNUTypewriterStandard';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
 }
