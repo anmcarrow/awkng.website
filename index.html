@@ -35,13 +35,18 @@
 
     <div id="wrapper">
 
+
 <header>
+<div id="header">
 <img src="img/banner_head.png">
+</div id="header">
 </header>
 
-<div id="links">
-
+<div id="about">
 <p class="textabout"><a href="http://patreon.deadurals.su" target="_blank" title="Читать далее..."><em class="textabout">1958-й год. Тебе так сказали. Память зияет провалами, как лагерное письмо после особо ретивого цензора. Ты - живое воплощение торжества советской науки над безжалостным и неведомым врагом. Ты - надежда на то, что кошмарная неизвестность наконец-то отступит. Ты - разведчик и у тебя нет права на ошибку...</em></a></p>
+</div id="about">
+
+<div id="links">
 
 <a href="http://patreon.com/deadurals_rpg" target="_blank" title="Актуальная разработка и подписка на свежие материалы">
 <img src="img/banner_patreon.png"></a><br>
@@ -69,7 +74,14 @@
 <a href="http://twitter.com/deadurals_rpg" target="_blank" title="Новостная лента">
 <img src="img/banner_twitter.png"><br>
 </a>
+
 <audio id="link-sound1" preload="auto">
+      <source src="audio/ring.wav" type="audio/wav">
+</audio>
+<audio id="link-sound2" preload="auto">
+      <source src="audio/wind.wav" type="audio/wav">
+</audio>
+<audio id="link-sound3" preload="auto">
       <source src="audio/button.wav" type="audio/wav">
 </audio>
 
@@ -79,7 +91,19 @@
 
 <!-- Audiolinks player -->
 <script>
-var beepThree = $("#link-sound1")[0];
+var beepOne = $("#link-sound1")[0];
+$("#header img")
+	.mouseenter(function() {
+		beepOne.pause();
+		beepOne.play();
+	});
+var beepTwo = $("#link-sound2")[0];
+$("#about p")
+	.mouseenter(function() {
+		beepTwo.pause();
+		beepTwo.play();
+	});
+var beepThree = $("#link-sound3")[0];
 $("#links a")
 	.mouseenter(function() {
 		beepThree.pause();
