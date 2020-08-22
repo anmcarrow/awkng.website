@@ -71,3 +71,12 @@ p {
   font-weight: normal;
   font-style: normal;
 }
+
+.errormessage {
+  background: transparent url(../img/about_back.png);
+  background-repeat: no-repeat;
+  font-family: 'GNUTypewriterStandard';
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+}
